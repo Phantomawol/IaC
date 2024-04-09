@@ -10,7 +10,7 @@
 title: "All Beginnings are hard"
 subtitle: "Aller Anfang ist schwer."
 # documentTitle: "Welcome" # Customize the browser tab text
-logo: "assets/logo.png"
+logo: "assets/icons/pwa-512x512.png"
 # Alternatively a fa icon can be provided:
 # icon: "fas fa-skull-crossbones"
 
