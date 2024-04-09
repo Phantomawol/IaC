@@ -8,3 +8,7 @@ Using the bastienwirtz's Homer repo:
     b. unzip the file in the assets folder. DO NOT UNZIP OUTSIDE THAT FOLDER OR YOU WILL HAVE TO CLEAN IT UP!
     c. cp the config.yml.dist like shown and this will give you the default template.
     d. You can skip step c. if you'd like (Untested as of 4th of April, 2024) and just sudo touch config.yml and load the config.yml listed under files/config.yml
+
+Pulling down icons for Homer dashboard
+  1. NX211 has a repo of all the PNG images you will need. Repo can be found here: https://github.com/NX211/homer-icons
+    a. Pull down whatever is needed. Ex: Pi-hole, Plex, Jellyfin, etc.
