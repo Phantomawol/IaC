@@ -5,14 +5,10 @@ Setting up Homer Dashboard Instructions
 
 **Note: I had issues with the docker container not containing everything (New to docker, so might of been my issues) and I wanted to set up some instructions for future setups. Will be an Ansible book in the future.**
 
-### Using the bastienwirtz's Homer repo to build docker image:
-Using the release tarball (prebuilt, ready to use) repo here: https://github.com/bastienwirtz/homer/tree/main?tab=readme-ov-file#getting-started
-
-> 1.  wget the url listed
-> 2.  unzip the file in the assets folder you created with Docker and/or Portainer. **DO NOT UNZIP OUTSIDE THAT FOLDER OR YOU WILL HAVE TO CLEAN IT UP!**
-> 3.  cp the config.yml.dist like shown and this will give you the default template.
-> 
-> (Needs testing): You can skip step 3 if you'd like (Untested as of 4th of April, 2024) and just sudo touch config.yml and load the config.yml listed under files/config.yml
+### Using Walkxcode's repo as it's much cleaner than default layout.
+  1. Visit's Walkxcode's github listed here: https://github.com/walkxcode/homer-theme/tree/main?tab=readme-ov-file#getting-started
+  2. Git clone the repo and drop it in the main home directory. **Note: You will need to respin up the docker instance (Unless you don't need to, I'm new to docker) and change the Host Volume to the Homer-Theme directory.**
+  3. Once that is done, you will be able to delete their config.yml file and load the custom one under assets/config.yml
 
 ### Pulling down icons for Homer dashboard:
 **Note: Testing on 4th of April, 2024 - The pihole icon didn't load on the page and I ended up pulling the icon from here: https://pi-hole.github.io/graphics/Vortex/Vortex_Vertical_wordmark_lightmode.png**
