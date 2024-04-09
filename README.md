@@ -1,8 +1,11 @@
-# IaC
-Infrastructure as Code inspired by Wolfgang's Channel aka notthebee
+Infrastructure as Code
+=============
+```
+Current
 
-# Current
-  - Homer for all items to be in one homepage inspired by Wolfgang's Channel on Youtube.
+  - Homer for all items to be in one homepage inspired by notthebee
 
-# Future
+Future
+
   - Ansible Playbook to deploy to servers for fast deployment
+```
