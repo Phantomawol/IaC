@@ -96,14 +96,14 @@ message:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Link 1"
+  - name: "Personal Github"
     icon: "fab fa-github"
     url: "https://github.com/Phantomawol" # Link to my github
     target: "_blank" # optional html tag target attribute
   - name: "IaC Repo"
     icon: "fas fa-book"
     url: "https://github.com/Phantomawol/IaC/tree/main" # My link to this repo
-  # this will link to a second homer page that will load config from page2.yml and keep default config values as in config.yml file
+  # this will link to a second homer page that will load config from page2.yml and keep default config values as in config.yml file (Turned off for now)
   # see url field and assets/page.yml used in this example:
   #- name: "Second Page"
   #  icon: "fas fa-file-alt"
@@ -134,7 +134,7 @@ services:
         # Optional tagstyle
         tagstyle: "is-success"
         url: "{Plex IP here!!}"
-  - name: "Other group"
+  - name: "Network"
     icon: "fas fa-heartbeat"
     items:
       - name: "Pi-hole"
