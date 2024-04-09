@@ -1,0 +1,10 @@
+Setting up Homer Dashboard Instructions
+
+Note: I had issues with the docker container not containing everything (New to docker, so might of been my issues) and I wanted to set up some instructions for future setups. Will be an Ansible book in the future.
+
+Using the bastienwirtz's Homer repo:
+  1. Under "Using the release tarball (prebuilt, ready to use) repo here: https://github.com/bastienwirtz/homer/tree/main?tab=readme-ov-file#getting-started
+    a. wget the url listed
+    b. unzip the file in the assets folder. DO NOT UNZIP OUTSIDE THAT FOLDER OR YOU WILL HAVE TO CLEAN IT UP!
+    c. cp the config.yml.dist like shown and this will give you the default template.
+    d. You can skip step c. if you'd like (Untested as of 4th of April, 2024) and just sudo touch config.yml and load the config.yml listed under files/config.yml
