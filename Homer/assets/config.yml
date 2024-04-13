@@ -61,7 +61,7 @@ services:
         subtitle: "Selfhosted subreddit"
         tag: "reddit"
         tagstyle: "is-info"
-        url: "https://www.reddit.com/r/selfhosted/"
+        url: "https://www.reddit.com/r/selfhosted/" #Nice to have a quick link to selfhosted reddit.
         target: "_blank"
 
   - name: "//Plex"
@@ -72,7 +72,7 @@ services:
         subtitle: "Media Streaming"
         tag: "media"
         tagstyle: "is-info"
-        url: "Plex IP Here!!"
+        url: "Plex IP Here!!" #If you have a plex instance installed. Jellyfin also exist as well.
         target: "_blank"
 
   - name: "//Pihole"
@@ -83,5 +83,16 @@ services:
         subtitle: "Pihole admin portal"
         tag: "media"
         tagstyle: "is-info"
-        url: "Pihole IP Here!!"
+        url: "Pihole IP Here!!" #If you have a pihole instance
+        target: "_blank"
+
+  - name: "//Portainer"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Portainer Admin Interface"
+        logo: "assets/tools/reddit.png"
+        subtitle: "Portainer"
+        tag: "media"
+        tagstyle: "is-info"
+        url: "Portainer IP Here!" #If you have a portainer instance
         target: "_blank"
