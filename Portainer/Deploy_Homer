@@ -1,0 +1,18 @@
+Current page is meant for Homer setup. Will add more down the road in their own paths. (Commands used are from this video here. Full credit goes to Homelab Tim - https://www.youtube.com/watch?v=KO9oMXkz0QA)
+
+1. Log into your portainer instance
+
+2. Under "Containers" > Add container
+
+3. Name the container - Ex. Homer
+
+4. Port mapping:
+  a. Host: Ex. 8902 -> container: 8080 (This is the default port of portainer)
+
+5. Volume Mapping:
+  a. container set to "Bind" with /www/assets -> host set to "writeable" with /portainer/Files/AppData/Config/Homer/assets
+  b. container set to "Bind" with /www/config.yml -> host set to "writable" with /portainer/Files/AppData/Config/Homer
+
+6. Permissions for assets folder:
+  a. CD into /portainer/Files/AppData/Config/Homer
+  b. Once in the path above, make sure to chown the assets/ path for your account you are logged in with. Ex. sudo chown -R 1000:1000 assets/
