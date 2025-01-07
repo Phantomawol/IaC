@@ -16,3 +16,6 @@ Current page is meant for Homer setup. Will add more down the road in their own 
 6. Permissions for assets folder:
   a. CD into /portainer/Files/AppData/Config/Homer
   b. Once in the path above, make sure to chown the assets/ path for your account you are logged in with. Ex. sudo chown -R 1000:1000 assets/
+
+7. Restart homer container:
+  a. You will need to restart the container once you have changed permissons above to allow them to stick.
