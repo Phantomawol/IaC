@@ -1,8 +1,8 @@
 Note: These notes are for linux only at the moment. I do not claim to own anything linked in this page. I only set this up to help myself in the future if anything goes down (like what happened and is making me write all this up now)
 
 1. Installer Docker - How I installed docker was via this blog: https://raspberrytips.com/docker-on-raspberry-pi/
-  - Run in order:
-    -  curl -sSL https://get.docker.com | sh
-    -  sudo usermod -aG docker $USER
-      - Once you add the current user to the docker group, you need to reboot. 
+  a. Run in order:
+    i.  curl -sSL https://get.docker.com | sh
+    ii.  sudo usermod -aG docker $USER
+  b. Once you add the current user to the docker group, you need to reboot. 
 2. 
