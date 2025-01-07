@@ -4,5 +4,19 @@ Note: These notes are for linux only at the moment. I do not claim to own anythi
   a. Run in order:
     i.  curl -sSL https://get.docker.com | sh
     ii.  sudo usermod -aG docker $USER
-  b. Once you add the current user to the docker group, you need to reboot. 
-2. 
+  b. Once you add the current user to the docker group, you need to logout and log back in. 
+
+2. Installing Portainer (Standalone) -  https://docs.portainer.io/start/install-ce/server/docker/linux
+  a. Creating volume that portainer server stores its database:
+    i.   docker volume create portainer_data
+  b. Download and install portainer server container:   
+    i.   docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.5 (This version number will change)
+      -  Note: The version of portainer above will change! Mark sure to check the link above to make sure you have the right command!
+  c.  Setup user account - https://docs.portainer.io/start/install-ce/server/setup
+
+3. Updating Docker standalone - https://docs.portainer.io/start/upgrade/docker
+  a.  docker stop portainer
+  b.  docker rm portainer
+  c.  docker pull portainer/portainer-ce:2.21.5 (this number will be different, so review the link above in 3.)
+    i.  Deploy the updated version
+      -  docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.5 (This version number will change, so make sure it's the correct one in the link in 3.)
