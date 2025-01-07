@@ -1,0 +1,5 @@
+1. Under your Portainer instance:
+  a. Click Images under local
+  b. Paste your image. Ex. b4bz/homer
+  c. Click "Pull the image"
+  d. Confirm your image is under "Images" and you are good to go.
