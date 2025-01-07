@@ -19,3 +19,6 @@ Current page is meant for Homer setup. Will add more down the road in their own 
 
 7. Restart homer container:
   a. You will need to restart the container once you have changed permissons above to allow them to stick.
+
+8. Applying custom config.yml:
+  a. Hop over to Homer > assets > config.yml under this repo to copy/paste custom file.
